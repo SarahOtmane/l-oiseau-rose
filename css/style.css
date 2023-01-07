@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'caveatregular';
+    src: url('fonts/caveat-variablefont_wght-webfont.eot');
+    src: url('fonts/caveat-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/caveat-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/caveat-variablefont_wght-webfont.woff') format('woff'),
+         url('fonts/caveat-variablefont_wght-webfont.ttf') format('truetype'),
+         url('fonts/caveat-variablefont_wght-webfont.svg#caveatregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+/* ------------------ header -----------------------*/
+
+    /* la barre qui emmene vers l'autre site */
+header .barre{
+    width: 100%;
+    height: 25px;
+    font-size: 13px;
+    background-color: #2d5451f4;
+    padding-top: 5px;
+    padding-left: 80px;
+}
+
+header a{
+    color: white;
+}
+
+    /* la section du header qui a comme background l'image*/
+header #image{
+    width: 100%;
+    height: 680px;
+    background-image: url("assets/fille_plage.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header #image ul{
+    display: flex;
+    list-style: none;
+}
+
+    /* la nav ou jai mis les icones des reseaux sociaux*/
+header #image .icons{
+    padding-top: 30px;
+    padding-left: 6%;
+}
+
+header #image .icons li a{
+    padding: 8px;
+}
+
+header #image h1{
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'caveatregular', sans-serif;
+    margin-bottom: 40px;
+}
+
+header #image h1 + nav{
+    border-top: 0.05rem solid white;
+}
+
+    /* menu de navigation de la page */
+header #image .navigation{
+    padding-top: 15px;
+    padding-left: 6.5%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+header #image .navigation li{
+    padding: 18px;
+}
+
+    /* la section du header qui une couleur comme background */
+header .couleur{
+    width: 100%;
+    background-color: #2d5451f4;
+    color: white;
+    text-align: center;
+}
+
+header .couleur h1, header .couleur p{
+    width: 65%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+header .couleur button{
+    width: 25%;
+    height: 36px;
+    background-color: rgb(153, 57, 243);
+    border : none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+header .couleur p{
+    font-size: 1.2rem;
+}
+
+header .couleur p#dernier{
+    padding-bottom: 40px;
+}
+
+
+/* ------------------ main -----------------------*/
+
+    /* toutes les sections ont un border top en noir sauf qlq unes */
+section:not(.no-barre){
+    width: 100%;
+    border-top: 24px solid rgb(51, 51, 51);
+}
+
+main h1{
+    padding-top: 20px;
+}
+
+main a{
+    color: rgb(4, 156, 250);
+}
+
+    /* les section qui ont 3 articles*/
+.trois{
+    display: flex;
+    text-align: center;
+    padding-left: 6%;
+}
+
+.trois h2{
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.trois article{
+    width: 31%;
+    padding: 20px;
+}
+
+.trois img{
+    width: 100%;
+}
+
+.trois span{
+    font-size: 1.1rem;
+}
+
+    /*les sections qui ont 2 articles*/
+.deux{
+    display: flex;
+    padding-left: 6%;
+}
+
+.deux figure, .deux article{
+    width: 45%;
+    padding: 20px 20px;
+    font-size: 1.15rem;
+}
+
+.deux img{
+    width: 100%;
+}
+
+.deux span{
+    font-size: 1.3rem;
+    padding-left: 20%;
+}
+
+.deux .milieu a{
+    font-size: 1.3rem;
+    padding-left: 10%;
+}
+
+    /* la section avec une image comme background et contient un article */
+.background-image{
+    background-image: url("assets/chute.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 680px;
+}
+
+.moitie{
+    width: 45%;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 40px;
+    margin: 3% auto 3% 6%;
+}
+
+.moitie h1{
+    font-size: 2.2rem;
+    padding: 30px;
+}
+
+main div{
+    border-top: 24px solid #2d5451f4;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-top: 1%;
+    font-size: 1.3rem;
+    height: 80px;
+}
+
+main div span{
+    margin-left: 6%;
+}
+
+main div button{
+    width: 12%;
+    height: 35px;
+    background-color: rgb(153, 57, 243);
+    border : none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 36%;
+}
+main div button:hover, #couleur form button:hover{
+    background-color: black;
+}
+
+div a{
+    color: white;
+}
+
+    /* la section instagram où il ya que des photo */
+#blanc h2{
+    width: max-content;
+    margin: 50px auto 30px;
+    font-size: 1.4rem;
+}
+
+#blanc figure{
+    width: 100%;
+    display: flex;
+}
+
+#blanc img{
+    width: 10%;
+}
+
+    /* la section qui a comme background une couleur */
+#couleur{
+    background-color: #2d5451f4;
+    display: flex;
+    height: max-content;
+    padding-left: 5%;
+}
+
+#couleur article{
+    width: 32%;
+    padding: 20px; 
+    color: white;
+}
+
+#couleur article p{
+    text-align: justify;
+    font-size: 1.1rem;
+
+}
+
+#couleur h2{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#couleur form{
+    text-align: center;
+}
+
+#couleur form span{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#couleur #prenom, #couleur #email{
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+#couleur form ::placeholder{
+    font-style: italic;
+    padding-left: 5px;
+}
+
+#couleur input[type="checkbox"]{
+    width: 10px;
+}
+
+#couleur form button{
+    width: 180px;
+    height: 35px;
+    background-color: rgb(153, 57, 243);
+    border : none;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* ------------------ footer -----------------------*/
+
+footer{
+    background-color: #2d5451f4;
+    font-size: 0.9rem;
+    color: white;
+    border-top: 1px solid rgb(51, 51, 51);
+}
+ 
+footer article{
+    margin-left: 6%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 40%;
+}
